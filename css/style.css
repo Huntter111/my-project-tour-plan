@@ -527,10 +527,6 @@ template {
   line-height: 18px;
 }
 
-.swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-backface-hidden {
-  margin: 0;
-}
-
 .swiper {
   margin: 0;
   position: reletive;
