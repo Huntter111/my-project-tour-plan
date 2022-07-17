@@ -11,6 +11,7 @@
          rel="stylesheet"
       />
       <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
       <title>Best Tour Plan</title>
    </head>
@@ -136,9 +137,36 @@
                <!-- /.hotel-info__right -->
             </div>
             <!-- /.hotel-info -->
+            <div class="hotel-grid">
+               <!-- Slider main container -->
+               <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                     <!-- Slides -->
+                     <div class="swiper-slide">
+                        <img src="img/slide_1.jpg" alt="Slide" />
+                     </div>
+                     <div class="swiper-slide">
+                        <img src="img/slide_1.jpg" alt="Slide" />
+                     </div>
+                     <div class="swiper-slide">
+                        <img src="img/slide_1.jpg" alt="Slide" />
+                     </div>
+                  </div>
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button swiper-button--prev"></div>
+                  <div class="swiper-button swiper-button--next"></div>
+               </div>
+               <!-- /.swiper -->
+            </div>
+            <!-- /.hotel-grid -->
          </div>
          <!-- /.container -->
       </section>
       <!-- /.hotel -->
+
+      <script src="js/swiper-bundle.min.js"></script>
+      <script src="js/main.js"></script>
    </body>
 </html>
