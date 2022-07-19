@@ -139,25 +139,25 @@
             <!-- /.hotel-info -->
             <div class="hotel-grid">
                <!-- Slider main container -->
-               <div class="swiper hotel__swiper">
+               <div class="swiper hotel__swiper hotel-slider">
                   <!-- Additional required wrapper -->
                   <div class="swiper-wrapper">
                      <!-- Slides -->
-                     <div class="swiper-slide">
+                     <div class="swiper-slide hotel-slider__item">
                         <img
                            class="swiper-slide__image"
                            src="img/slide_1.jpg"
                            alt="Slide"
                         />
                      </div>
-                     <div class="swiper-slide">
+                     <div class="swiper-slide hotel-slider__item">
                         <img
                            class="swiper-slide__image"
                            src="img/slide_2.jpg"
                            alt="Slide"
                         />
                      </div>
-                     <div class="swiper-slide">
+                     <div class="swiper-slide hotel-slider__item">
                         <img
                            class="swiper-slide__image"
                            src="img/slide_3.jpg"
@@ -167,8 +167,12 @@
                   </div>
 
                   <!-- If we need navigation buttons -->
-                  <div class="swiper-button swiper-button--prev"></div>
-                  <div class="swiper-button swiper-button--next"></div>
+                  <div
+                     class="hotel-slider__button hotel-slider__button--prev"
+                  ></div>
+                  <div
+                     class="hotel-slider__button hotel-slider__button--next"
+                  ></div>
                </div>
                <!-- /.swiper -->
                <div class="hotel-right">
@@ -259,6 +263,49 @@
          </div>
          <!-- /.newsletter-wrapper -->
       </section>
+      <!-- /.newsletter -->
+      <section class="reviews">
+         <div class="container">
+            <h2 class="section-title">What people think about us</h2>
+            <div class="swiper reviews-slider">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <div class="reviews-slider__item">
+                        <div class="reviews-slider__profile">
+                           <img
+                              src="img/reviews-avatar.jpg"
+                              alt="Photo: Megan Fox"
+                              class="reviews-slider__avatar"
+                           />
+                           <h3 class="reviews-slider__username">Megan Fox</h3>
+                           <span class="reviews-slider__date"
+                              >Stayed 18 Nov, 2019</span
+                           >
+                           <div class="rating">
+                              <img src="img/star.svg" alt="star" />
+                              <img src="img/star.svg" alt="star" />
+                              <img src="img/star.svg" alt="star" />
+                              <img src="img/star.svg" alt="star" />
+                              <img src="img/star.svg" alt="star" />
+                           </div>
+                           <!-- /.rating -->
+                        </div>
+                        <!-- /.reviews-slider__profile -->
+                     </div>
+                     <!-- /.reviews-slider__item -->
+                  </div>
+                  <!-- /.swiper-slide -->
+               </div>
+               <!-- /.swiper-wrapper -->
+
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-button-next"></div>
+            </div>
+            <!-- /.reviews-slider-->
+         </div>
+         <!-- /.container -->
+      </section>
+      <!-- /.reviews -->
       <script src="js/swiper-bundle.min.js"></script>
       <script src="js/main.js"></script>
    </body>
