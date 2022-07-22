@@ -862,6 +862,78 @@ template {
   margin: 0 auto;
 }
 
+.activities {
+  padding: 60px 0px 98px 0px;
+}
+.activities__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0px 0px 57px 0px;
+}
+.activities-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 24px 26px 24px 26px;
+  width: 255px;
+  height: 255px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: -1;
+}
+.card__image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+}
+.card__title {
+  margin-top: auto;
+  margin-bottom: 18px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+.card__button {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 7px 22px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -874,6 +946,10 @@ template {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .card {
+    width: 230px;
+    height: 230px;
   }
 }
 @media (max-width: 992px) {
@@ -926,6 +1002,19 @@ template {
     font-size: 30px;
     line-height: 38px;
     margin: 0px 0px 50px 0px;
+  }
+  .activities {
+    padding: 60px 0px 70px 0px;
+  }
+  .activities-wrapper {
+    flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 340px;
+    height: 230px;
   }
 }
 @media (max-width: 768px) {
@@ -1001,6 +1090,9 @@ template {
     margin-top: 0;
     margin-bottom: 37px;
   }
+  .reviews {
+    padding: 40px 0px 60px 0px;
+  }
   .reviews-slider__item {
     padding: 0px 30px 30px 30px;
   }
@@ -1024,6 +1116,10 @@ template {
     font-size: 18px;
     line-height: 23px;
     margin: 0px 0px 42px 0px;
+  }
+  .card {
+    width: 48%;
+    height: 225px;
   }
 }
 @media (max-width: 576px) {
@@ -1054,6 +1150,19 @@ template {
     line-height: 38px;
   }
   .subscribe {
+    width: 100%;
+  }
+  .activities {
+    padding: 40px 0px 60px 0px;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .activities__title {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .card {
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
