@@ -13,6 +13,18 @@
 	.card
 		width: 230px
 		height: 230px
+.grid
+	grid-row-gap: 20px
+	grid-column-gap: 20px
+	&__room
+		margin-bottom: 24px
+	&-card-1
+		&__info
+			padding: 30px 21px 25px 32px
+		&__title
+			margin-bottom: 20px
+		&__text
+			margin: 0px 0px 24px 0px
 @media (max-width: 992px)
 	.container, .newsletter-wrapper
 		max-width: 700px
@@ -65,6 +77,28 @@
 	.card
 		width: 340px
 		height: 230px
+	.packages
+		&__title
+			font-size: 30px
+			line-height: 38px
+			margin-bottom: 45px
+	.grid
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		grid-row-gap: 20px
+		grid-column-gap: 20px
+		&__rating
+			margin-bottom: 6px
+		&-card-1
+			display: flex
+			grid-column-start: 1
+			grid-column-end: 3
+			grid-row-start: 1
+			grid-row-end: 2
+		&__info
+			padding: 40px 21px 30px 40px
+			max-width: 355px
+			min-height: 500px
 @media (max-width: 768px)
 	.container
 		max-width: 576px
@@ -152,6 +186,22 @@
 	.card
 		width: 48%
 		height: 225px
+	.grid
+		&-card-1
+			display: flex
+			grid-column-start: 1
+			grid-column-end: 3
+			grid-row-start: 1
+			grid-row-end: 2
+			&__info
+				padding: 30px 20px 30px 25px
+	.grid
+		&-card
+			// max-width: 100%
+			height: 100%
+			&__info
+				padding: 30px 20px 30px 25px
+				height: auto
 @media (max-width: 576px)
 	.logo
 		width: 99px
@@ -188,3 +238,32 @@
 			line-height: 23px
 	.card
 		width: 100%
+	.packages
+		&__title
+			font-size: 18px
+			line-height: 23px
+			margin: 0px 0px 45px 0px
+	.grid
+		display: grid
+		grid-template-columns: repeat(1, 1fr)
+		grid-row-gap: 20px
+		grid-column-gap: 20px
+		&-card-1
+			display: flex
+			flex-direction: column
+			grid-column-start: 1
+			grid-column-end: 1
+			grid-row-start: 1
+			grid-row-end: 1
+			&__photo
+				width: 100%
+				max-height: 250px
+				border-radius: 8px 8px 0px 0px
+			&__info
+				width: 100%
+				border-radius: 0px 0px 8px 8px
+				// min-height: 600px
+	.grid
+		&-card
+			max-width: 100%
+			height: 100%
