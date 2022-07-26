@@ -13,18 +13,21 @@
 	.card
 		width: 230px
 		height: 230px
-.grid
-	grid-row-gap: 20px
-	grid-column-gap: 20px
-	&__room
-		margin-bottom: 24px
-	&-card-1
-		&__info
-			padding: 30px 21px 25px 32px
-		&__title
-			margin-bottom: 20px
-		&__text
-			margin: 0px 0px 24px 0px
+	.grid
+		grid-row-gap: 20px
+		grid-column-gap: 20px
+		&__room
+			margin-bottom: 24px
+		&-card-1
+			&__info
+				padding: 30px 21px 25px 32px
+			&__title
+				margin-bottom: 20px
+			&__text
+				margin: 0px 0px 24px 0px
+	.footer
+		&__input
+			flex-basis: 100%
 @media (max-width: 992px)
 	.container, .newsletter-wrapper
 		max-width: 700px
@@ -99,6 +102,41 @@
 			padding: 40px 21px 30px 40px
 			max-width: 355px
 			min-height: 500px
+	.footer
+		padding: 73px 0px 33px 0px
+		&-wrapper
+			grid-template-columns: repeat(6, 1fr)
+			grid-row-gap: 40px
+		&__input
+			flex-basis: 49%
+		&__logo
+			grid-row: 1/2
+			grid-column: span 2
+		&__social
+			&-network
+				grid-row: 1/2
+				grid-column: span 4
+				align-self: center
+		&__legal
+			grid-column: span 2
+		&__categories
+			grid-row: 2 / 3
+			grid-column: span 2
+		&__additional
+			grid-column: span 2
+		&__contact
+			&-details
+				grid-column: span 5
+				grid-row: 3
+			&-form
+				grid-column: span 5
+				grid-row: 4
+	.disclaimer
+		&__wrapper
+			grid-template-columns: repeat(2, 1fr)
+		&__text
+			grid-column-start: 1
+			grid-column-end: 3
 @media (max-width: 768px)
 	.container
 		max-width: 576px
@@ -202,6 +240,9 @@
 			&__info
 				padding: 30px 20px 30px 25px
 				height: auto
+	.footer
+		&__input
+			flex-basis: 100%
 @media (max-width: 576px)
 	.logo
 		width: 99px
@@ -267,3 +308,52 @@
 		&-card
 			max-width: 100%
 			height: 100%
+	.footer
+		&-wrapper
+			grid-template-columns: 1fr
+			grid-row-gap: 20px
+		&__form
+			width: 93%
+		&__logo
+			grid-row: 1
+			grid-column: 1
+		&__social
+			&-network
+				grid-row: 2
+				grid-column: 1
+		&__additional
+			grid-row: 3
+			grid-column: 1
+		&__categories
+			grid-row: 4
+			grid-column: 1
+		&__legal
+			grid-row: 5
+			grid-column: 1
+		&__contact
+			&-details
+				grid-row: 6
+				grid-column: 1
+			&-form
+				grid-row: 7
+				grid-column: 1
+		&__input
+			flex-basis: 92%
+		&__message
+			flex-basis: 92%
+		&__info
+			flex-basis: 140px
+		&__item
+			font-size: 12px
+		&__title
+			font-size: 14px
+	.disclaimer
+		&__wrapper
+			grid-template-columns: 1fr
+			grid-row-gap: 20px
+		&__text
+			grid-column: 1
+			grid-row: 1
+		&__image
+			grid-column: 1
+			grid-row: 2
