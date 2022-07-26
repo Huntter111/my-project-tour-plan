@@ -1070,6 +1070,7 @@ template {
 }
 .grid-card__photo {
   position: relative;
+  height: 250px;
 }
 .grid-card__image {
   border-radius: 8px 8px 0px 0px;
