@@ -1281,7 +1281,7 @@ template {
     grid-column-gap: 20px;
   }
   .grid__room {
-    margin-bottom: 24px;
+    margin-bottom: 36px;
   }
   .grid-card-1__info {
     padding: 30px 21px 25px 32px;
@@ -1290,7 +1290,7 @@ template {
     margin-bottom: 20px;
   }
   .grid-card-1__text {
-    margin: 0px 0px 24px 0px;
+    margin: 0px 0px 30px 0px;
   }
   .footer__input {
     flex-basis: 100%;
@@ -1670,6 +1670,7 @@ template {
   .grid-card-1__info {
     width: 100%;
     border-radius: 0px 0px 8px 8px;
+    max-height: 100%;
   }
   .grid-card {
     max-width: 100%;
@@ -1711,19 +1712,23 @@ template {
     grid-column: 1;
   }
   .footer__input {
-    flex-basis: 92%;
+    width: 100%;
   }
   .footer__message {
-    flex-basis: 92%;
+    width: 100%;
   }
   .footer__info {
-    flex-basis: 140px;
+    flex-basis: 100%;
+    margin-top: 12px;
   }
   .footer__item {
     font-size: 12px;
   }
   .footer__title {
     font-size: 14px;
+  }
+  .footer__button {
+    width: 100%;
   }
   .disclaimer__wrapper {
     grid-template-columns: 1fr;

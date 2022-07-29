@@ -17,14 +17,14 @@
 		grid-row-gap: 20px
 		grid-column-gap: 20px
 		&__room
-			margin-bottom: 24px
+			margin-bottom: 36px
 		&-card-1
 			&__info
 				padding: 30px 21px 25px 32px
 			&__title
 				margin-bottom: 20px
 			&__text
-				margin: 0px 0px 24px 0px
+				margin: 0px 0px 30px 0px
 	.footer
 		&__input
 			flex-basis: 100%
@@ -343,7 +343,7 @@
 			&__info
 				width: 100%
 				border-radius: 0px 0px 8px 8px
-				// min-height: 600px
+				max-height: 100%
 	.grid
 		&-card
 			max-width: 100%
@@ -378,15 +378,20 @@
 				grid-row: 7
 				grid-column: 1
 		&__input
-			flex-basis: 92%
+			// flex-basis: 92%
+			width: 100%
 		&__message
-			flex-basis: 92%
+			// flex-basis: 92%
+			width: 100%
 		&__info
-			flex-basis: 140px
+			flex-basis: 100%
+			margin-top: 12px
 		&__item
 			font-size: 12px
 		&__title
 			font-size: 14px
+		&__button
+			width: 100%
 	.disclaimer
 		&__wrapper
 			grid-template-columns: 1fr
