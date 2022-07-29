@@ -1681,7 +1681,7 @@ template {
     grid-row-gap: 20px;
   }
   .footer__form {
-    width: 93%;
+    width: 100%;
   }
   .footer__logo {
     grid-row: 1;
