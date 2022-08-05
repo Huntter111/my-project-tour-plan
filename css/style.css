@@ -1203,7 +1203,7 @@ template {
   color: inherit;
 }
 .footer__input {
-  color: #0A223D;
+  color: #000000;
   border-radius: 4px;
   border: none;
   padding: 0px 23px 0px 23px;
@@ -1213,7 +1213,7 @@ template {
 }
 .footer__message {
   min-height: 200px;
-  color: #0A223D;
+  color: #000000;
   border-radius: 4px;
   padding: 18px 23px;
   border: none;
@@ -1239,6 +1239,10 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+}
+
+.footer__message {
+  color: #0A223D;
 }
 
 .disclaimer__wrapper {
